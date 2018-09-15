@@ -34,41 +34,41 @@ body{
 
 
 .tarjeta{
-    contain: layout;
-    max-width:320px;
+    height: 490px;
+    max-width:326px;
     background-color: var(--White);
     border-radius: 16px;
     box-shadow: 8px 8px 2px var(--Gray-950);
+    border: solid 1px var(--Gray-950);
 }
 
 #imagen{
-      margin: 0 auto;
-      width:auto;
-     height: 200px;
-     display: grid;
-     place-content:center ;
-     padding: 16px 16px 16px 16px;
-
-    & .imajen{
-        border-radius: 8px;  
-        width:auto;
-        height: 170px;  
-    }
+    margin: auto;
+    width: 320px;
+    height: 200px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: grid;
+    place-content: center;
+     clip-path: inset(1% 6.3% 1% 6.3% round 4%);/*esto recorta la imagen en un
+                                                 rectangulo y redondea los bordes*/
+   
     }
 
 .boton{
    background-color: var(--Yellow);
    font-weight: 800;
-   margin-left: 16px;
-   margin-bottom: 10px;
-   padding: 5px 10px 5px 10px;
+   font-size: .75rem;
+   margin-left: 21px;
+   margin-bottom: 14px;
+   padding: 5px 8px 5px 8px;
    border-radius: 4px;
    border: none;
    color: var(--Gray-950);
    
 }
 .fecha{
-    margin-left: 16px;
+    margin-left: 21px;
     margin-bottom: 16px;
     font-weight: 500;
     font-size: .72rem;
@@ -79,23 +79,29 @@ body{
     color: var(--Gray-950);
     font-weight: 800;
     font-size: 1.25rem;
-    margin-left: 16px; 
+    margin-left: 21px; 
 }
 .des{
-    margin-left: 16px;
+    margin-left: 21px;
     margin-right: 16px;
     margin-top: 16px;
     color:var(--Gray-500);
     font-size: .89rem;
     font-weight: 500;
+    line-height: 1.25rem;
 }
 .abatar{
-    margin-left: 16px;
-    margin-top: 40px;
-    margin-bottom: px;
-    height: 40px;
-    border: 1px solid red;
+    margin-left: 21px;
+    margin-top: 25px;
+    margin-bottom:20px;
+    height: 35px;
+    width: 200px;
     display: flex;
     gap:8px;
+    color:var(--Gray-950);
+    font-weight: 800;
+    & .name{
+        margin-top: 5px;
+    }
 }
     
