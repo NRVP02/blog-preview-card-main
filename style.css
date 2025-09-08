@@ -1,0 +1,101 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    background-color:var(--Yellow) ;
+     display: grid;
+    place-content: center;
+    height: 100vh;
+    font-size: 1rem;
+    font-family: var(--font-family);
+}
+
+
+
+:root{
+    --Yellow: hsl(47, 88%, 63%);
+    --White: hsl(0, 0%, 100%);
+    --Gray-500: hsl(0, 0%, 42%);
+    --Gray-950: hsl(0, 0%, 7%);
+    --font-family: "Figtree";
+}
+@font-face{
+    font-family: "Figtree";
+   font-style: normal;
+   font-weight: "500 800";
+   font-display: swap;
+   src: url(./assets/fonts/Figtree-VariableFont_wght.ttf)
+}
+
+
+.tarjeta{
+    contain: layout;
+    max-width:320px;
+    background-color: var(--White);
+    border-radius: 16px;
+    box-shadow: 8px 8px 2px var(--Gray-950);
+}
+
+#imagen{
+      margin: 0 auto;
+      width:auto;
+     height: 200px;
+     display: grid;
+     place-content:center ;
+     padding: 16px 16px 16px 16px;
+
+    & .imajen{
+        border-radius: 8px;  
+        width:auto;
+        height: 170px;  
+    }
+    }
+
+.boton{
+   background-color: var(--Yellow);
+   font-weight: 800;
+   margin-left: 16px;
+   margin-bottom: 10px;
+   padding: 5px 10px 5px 10px;
+   border-radius: 4px;
+   border: none;
+   color: var(--Gray-950);
+   
+}
+.fecha{
+    margin-left: 16px;
+    margin-bottom: 16px;
+    font-weight: 500;
+    font-size: .72rem;
+    color: var(--Gray-950);    
+}
+.enlase{
+    text-decoration:none;
+    color: var(--Gray-950);
+    font-weight: 800;
+    font-size: 1.25rem;
+    margin-left: 16px; 
+}
+.des{
+    margin-left: 16px;
+    margin-right: 16px;
+    margin-top: 16px;
+    color:var(--Gray-500);
+    font-size: .89rem;
+    font-weight: 500;
+}
+.abatar{
+    margin-left: 16px;
+    margin-top: 40px;
+    margin-bottom: px;
+    height: 40px;
+    border: 1px solid red;
+    display: flex;
+    gap:8px;
+}
+    
