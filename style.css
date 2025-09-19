@@ -68,7 +68,7 @@ body{
 }
 .fecha{
     margin-left: 21px;
-    margin-bottom: 1px;
+    margin-bottom: 6px;
     font-weight: 500;
     font-size: .72rem;
     color: var(--Gray-950);    
