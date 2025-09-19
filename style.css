@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
+    
 }
 
 body{
@@ -51,8 +51,7 @@ body{
     display: grid;
     place-content: center;
      clip-path: inset(1% 6.3% 1% 6.3% round 4%);/*esto recorta la imagen en un
-                                                 rectangulo y redondea los bordes*/
-   
+                                               rectangulo y redondea los bordes*/;
     }
 
 .boton{
@@ -61,7 +60,7 @@ body{
    font-size: .75rem;
    margin-left: 21px;
    margin-bottom: 14px;
-   padding: 5px 8px 5px 8px;
+   padding: 5px 8px 6px 8px;
    border-radius: 4px;
    border: none;
    color: var(--Gray-950);
@@ -69,22 +68,27 @@ body{
 }
 .fecha{
     margin-left: 21px;
-    margin-bottom: 16px;
+    margin-bottom: 10px;
     font-weight: 500;
     font-size: .72rem;
     color: var(--Gray-950);    
 }
 .enlase{
-    text-decoration:none;
+    text-decoration:inherit;
     color: var(--Gray-950);
     font-weight: 800;
     font-size: 1.25rem;
     margin-left: 21px; 
 }
+
+.enlase a:hover, .enlase a:active {
+        color: var(--Yellow);
+      }
+
 .des{
     margin-left: 21px;
     margin-right: 16px;
-    margin-top: 16px;
+    margin-top: 10px;
     color:var(--Gray-500);
     font-size: .89rem;
     font-weight: 500;
@@ -94,14 +98,51 @@ body{
     margin-left: 21px;
     margin-top: 25px;
     margin-bottom:20px;
-    height: 35px;
+    height: 33px;
     width: 200px;
     display: flex;
     gap:8px;
     color:var(--Gray-950);
     font-weight: 800;
     & .name{
-        margin-top: 5px;
+        font-size: 0.93rem;
+        margin-top: 6px;
     }
 }
+
+@media ( min-width:740px ){
+    .tarjeta{
+        height: 522px;
+         max-width:387px;
+         border-radius: 20px;
+     }
+     #imagen{
+         clip-path:none;
+         margin-top:24px;
+          margin-bottom:24px;
+         width: 350px;
+         & .imajen{
+            border-radius: 11px;
+         }
+     } 
+    .boton{
+        margin-left:25px ;
+         font-size: .85rem;
+    }
+    .fecha{
+         margin-left: 25px;
+        font-size: .85rem;
+    }
+    .enlase{
+        font-size: 1.52rem;       
+      }
+      .des{
+         font-size: 1.0rem;
+          line-height: 1.40rem;
+      }    
+}
     
+    
+ 
+
+
